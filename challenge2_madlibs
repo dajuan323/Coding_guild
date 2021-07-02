@@ -1,0 +1,14 @@
+data = 'nonmaterial'
+adjective = 'bearded'
+sci_bzzwrd = 'half-stack'
+animal = 'parrots'
+sci_thing = 'warp-drive'
+sci_thing2 = 'trilithium crystals'
+sci_adj = 'biochemical'
+
+print(f"""Non material scientist job description:
+
+Key responsibilies:
+    - Extract patterns from {data}
+    - Optimize {sci_thing}
+    - Transform {sci_thing2} into {sci_adj} material""")
