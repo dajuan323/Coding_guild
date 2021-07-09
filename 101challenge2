@@ -1,13 +1,35 @@
-sent = "Python is fun!"
-word = "Python"
+#2. Madlib
 
-#1.1 The letters of a word, each in own string
-print(list(word))
+#2.1 set group of words as madlib words
 
-#1.2 The individual words of a sentence in own string
-print(sent.split())
+start = input("Press (y) to start:")
+while start == "y":
+    synonym = input("Give a synonym for 'run':")
+#2.1 Find words by 2.2 asking user to ask for words through 2.3 f"statement   
 
-#1.3 The individual characters of a sentence in own string
-print(list(sent))
+    adjective1 = input("Give a sciencey adjective:")
+    adjective2 = input("Now, a funny adjective:")
+    adjective3 = input("...and another adjective:")
+#Extra Challenge 1
 
-#1.4 Place comments explaining code<--
+    adj_lst = (f"{adjective1}, {adjective2}, {adjective3}")
+    splt_adjlist = adj_lst.split(",")
+    country = input("Give a name of a country in the world:")
+    dino_name = input("...make up a dinosaur:")
+    print(f"Let's {synonym} to the {adjective1}, {adjective2}, and {adjective3} country of {country} to see the great {dino_name}!!!")
+    print(splt_adjlist)
+#Extra Challenge 2
+
+    contin = input("Continue?: (y) or (n)")
+    if contin != "y" and contin != "n":
+        choice3 = input("pick either (y) or (n)")
+        if choice3 != "y":
+            print(f"Later {dino_name}")
+            break 
+    elif contin == "n":
+        print("Bye.")
+        break
+    
+
+else:
+    print("Bye.")
