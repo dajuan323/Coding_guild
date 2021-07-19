@@ -1,0 +1,25 @@
+#week 2 Lab 3
+def m_conv():
+    unit_dict = {'ft' : .3048}
+    
+    
+    ques_1 = input("What is the distance in feet?: ")
+    unit_conv = float(ques_1) * float(unit_dict['ft'])
+    while True:
+        print(f"{ques_1} ft is {unit_conv} m.")
+        break
+
+m_conv()
+
+#Version 2 & 3
+
+def multi_m_conv():
+    unit_dict2 = {'ft' : .3048, 'mi' : 1609.34, 'm' : 1, 'km' : 0.001, 'yd' : 0.9144, 'in' : 0.0254}
+    ques_2a = input("What is the distance?: ")
+    ques_2b = input("What are the units?: ")
+    unit_conv2 = float(ques_2a) * float(unit_dict2[ques_2b])
+    while True:
+        print(f"{ques_2a} {ques_2b} is {unit_conv2} m.")
+        break
+    
+multi_m_conv()
