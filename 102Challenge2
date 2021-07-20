@@ -1,0 +1,29 @@
+def sum_numbers(numbers):
+    sum = 0
+
+    for num in numbers:
+        sum += num
+
+    return f"Sum: {sum}"
+
+
+numeros = [4, 5, 4, 2, 7, 4, 4, 5, 8, 10]
+
+print(sum_numbers(numeros))
+numberzz = []
+counter = 0
+
+while True:
+
+    counter += 1
+
+    
+    choice = input(f"Enter a number or 'done' to quit.")
+
+    if choice == 'done':
+            break
+        
+    else:
+            numberzz + choice
+    print(numberzz)
+    print(sum_numbers(numberzz))
