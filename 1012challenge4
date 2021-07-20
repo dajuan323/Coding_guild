@@ -1,0 +1,20 @@
+str1 = input(f"Enter first word: ")
+str2 = input(f"Enter second word: ")
+
+low_str1 = str1.lower()
+low_str2 = str2.lower()
+
+if len(low_str1) == len(low_str2):
+
+    str1_nogap = sorted(low_str1.replace(" ", ""))
+    str2_nogap = sorted(low_str2.replace(" ", ""))
+
+    if str1_nogap == str2_nogap:
+        print(str1 + " and " + str2 + " are anagrams!")
+
+    else:
+        print(str1 + " and " + str2 + " aren't anagrams.")
+
+else:
+    print(str1 + " and " + str2 + " aren't anagrams.")
+
